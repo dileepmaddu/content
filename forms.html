@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Forms with css </title>
+        <link rel="stylesheet" href="forms.css">
+    </head>
+    <body>
+        <form name="regForm">
+            <table>
+                <!--Row-1-->
+                <tr>
+                    <td> <label> First Name</label></td>
+                    <td><input type="text" name="Fname" placeholder="enter first name"></td>
+                    <td> <span>(****please enter valid first name****)</span></td>
+                </tr>
+                <!--row-2-->
+                 <tr>
+                    <td> <label> Last Name</label></td>
+                    <td><input type="text" name="Lname" placeholder="enter Last name"></td>
+                    <td> <span>(****please enter valid last name****)</span></td>
+                </tr>
+                <!--Row-3-->
+                 <tr>
+                    <td> <label> Password</label></td>
+                    <td><input type="password" name="pwd" placeholder="enter password"></td>
+                    <td> <span>(****please enter password****)</span></td>
+                </tr>
+                <!--Row-4-->
+                 <tr>
+                    <td> <label> Confirm password</label></td>
+                    <td><input type="password" name="confirm password" placeholder="repeat password"></td>
+                    <td> <span>(****please repeat same password****)</span></td>
+                </tr>
+                <!--Row-5-->
+                 <tr>
+                    <td> <label> Email</label></td>
+                    <td><input type="email" name="uemail" placeholder="enter email"></td>
+                    <td> <span>(****please enter valid email****)</span></td>
+                </tr>
+                 <tr>
+                    <td> <label> Mobile number</label></td>
+                    <td><input type="tel" name="contact number" placeholder="enter contact number"></td>
+                    <td> <span>(****please enter valid phone number****)</span></td>
+                </tr>
+                <!--row-7-->
+                 <tr>
+                    <td> <label> Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="m">male
+                        <input type="radio" name="gender" value="f">female
+                    </td>
+                    <td>
+                         <span>(****select gender****)</span>
+                        </td>
+                </tr>
+                <!--row-8-->
+                 <tr>
+                    <td> <label> Languages</label></td>
+                    <td>
+                        <input type="checkbox" name="languages" value="c">c lang
+                        <input type="checkbox" name="languages" value="cpp">c++
+                    </td>
+                    <td>
+                         <span>(****select languages****)</span>
+                        </td>
+                </tr>
+                <!--row-9-->
+                 <tr>
+                    <td> </td>
+                    <td>
+                        <input type="checkbox" name="languages" value="java">JAVA lang
+                        <input type="checkbox" name="languages" value="react">MERN
+                    </td>
+                    <td>
+                        </td>
+                </tr>
+                <!--row-10-->
+                 <tr>
+                    <td> <label> DOB</label></td>
+                    <td>
+                        <input type="date" name="udob" >
+                    </td>
+                    <td>
+                         <span>(****select valid DOB****)</span>
+                        </td>
+                </tr>
+                <!--row-11-->
+                 <tr>
+                    <td> <label> Preferred Time</label></td>
+                    <td>
+                        <input type="time" name="ptime">
+                    </td>
+                    <td>
+                         <span>(****select valid preferred time****)</span>
+                        </td>
+                </tr>
+                <!--row-12-->
+                 <tr>
+                    <td> <label> Fav color</label></td>
+                    <td>
+                        <input type="color" name="favcolor">
+                    </td>
+                    <td>
+                         <span>(****select favourite color****)</span>
+                        </td>
+                </tr>
+                <!--Row-13-->
+                <tr>
+                    <td><label> country</label></td>
+                    <td>
+                        <select name="country">
+                            <option value="">select country</option>
+                            <option value="india">india</option>
+                            <option value="usa">america</option>
+                            <option value="uk">london</option>
+
+                        </select>
+                    </td>
+                    <td>
+                        <span>(***select country***)</span>
+                    </td>
+                </tr>
+                <!--Row-14-->
+                <tr>
+                    <td><label> Address </label></td>
+                    <td>
+                        <textarea name="addr"></textarea>
+                    </td>
+                    <td>
+                        <span>(***max 50 characters are allowed***)</span>
+                    </td>
+                </tr>
+                <!--row-15-->
+                 <tr>
+                    <td> <label> upload resume</label></td>
+                    <td>
+                        <input type="file" name="userresume" accept="pdf">
+                    </td>
+                    <td>
+                         <span>(****upload pdf file****)</span>
+                        </td>
+                </tr>
+                <!--row-16-->
+                 <tr>
+                    <td> <label> register</label></td>
+                    <td>
+                        <input type="submit" name="register">
+                        <input type="reset" name="clear">
+                    </td>
+                    <td>
+        
+                        </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

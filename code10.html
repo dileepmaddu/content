@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Items </title>
+          <style>
+            table{
+                width: 50%;
+                text-align: center;
+                margin: 100px auto;
+                border: 1px solid gray;
+                border-collapse: collapse;
+            }
+            th,td{
+                border: 1px solid gray;
+            }
+            th{
+                height: 75px;
+            }
+            td{
+                height: 50px;
+            }
+            tr:nth-child(even){
+                background-color: orange;
+                color: white;
+            }
+            tr:nth-child(odd){
+                background-color: olivedrab;
+                color: white;
+            }
+            tr:hover{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="2"
+            align="center"
+            cellpadding="10"
+            cellspacing="10">
+            <!--Row-1-->
+            <tr>
+                <td>SNO</td>
+                <td>NAME</td>
+                <td>COST</td>
+                <td>UPDATE</td>
+                <td>DELETE</td>
+            </tr>
+            <!--row-2---->
+            <tr>
+                <td>1</td>
+                <td>LAPTOP</td>
+                <td><i class="fa fa-inr"></i>50000</td>
+                <td><i class="fa fa-edit"></i></td>
+                <td><i class="fa fa-trash"></i></td>
+            </tr>
+             <!--row-3---->
+            <tr>
+                <td>2</td>
+                <td>MOBILE</td>
+                <td><i class="fa fa-inr"></i>50</td>
+                <td><i class="fa fa-edit"></i></td>
+                <td><i class="fa fa-trash"></i></td>
+            </tr>
+             <!--row-4---->
+            <tr>
+                <td>3</td>
+                <td>SHOES</td>
+                <td><i class="fa fa-inr"></i>10</td>
+                <td><i class="fa fa-edit"></i></td>
+                <td><i class="fa fa-trash"></i></td>
+            </tr>
+
+
+        </table>
+    </body>
+</html>
+<td><i class="fa fa-edit"></i></td>

@@ -1,0 +1,602 @@
+element selector:
+****************
+element selector starts with "tag name"
+ex:
+***
+p{
+}
+div{
+}
+table{
+}
+class selector :
+****************
+it starts with "."(dot)
+element will identified based on class
+ex:
+HTML
+****
+<p class ="c1"></p>
+<div class="c2 c3>"</div>
+id selector:
+************
+id selector starts with "#"
+element will identified based on id
+ex:
+HTML               
+***
+<p id="id1"</p>
+CSS
+***
+#id1{}
+what are the differences between class selector and id selector?
+class selector                  id selector
+*****************************************************************
+starts with "."               starts with "#"
+class selector may duplicate  id selector must be unique
+class selector has less       id selector have more specificity compared to class selector
+specificity compared to 
+id selector
+usecase:
+if multiple teams working     to dominate third party styles we will use id selector
+on same project then class
+selector suggested
+*********************************************************************************************
+
+
+divisions
+**********
+it is used to divide web page into multiple parts
+<div></div> tag, is used to create divisions
+<div></div> tag is block level element
+internal styles
+***************
+including styles inside html page called as internal styles
+<style></style> tag ,used to include css inside html page
+Ex:
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+      </style>
+   </head>
+   <body>
+   </body>
+</html>
+
+what are the differences between external styles and internal styles?
+external styles                                                         internal styles
+*******************************************************************************************************************
+1)<link> tag,used to include the external styles                 1)<style></style> tag, used to write the internal styles
+2)<link> tag is non paired tag and supports two attributes       2)<style></style> tag is paired tag
+1.rel="stylesheet"
+2.href
+3)we can achieve styles reusability                              3)we may not achieve styles reusability
+*********************************************************************************************************************
+decendent selector 
+*****************
+decendent selector are also called as "dependent selector"
+select an element under "parent element"  of "any depth" called as decendent selector
+HTML                                             CSS
+**************************************************************************************
+<div>                                          div h2{}
+     <h2></h2>
+</div>
+
+<div>                                         div{}
+    <div>
+        <span>
+           <h2></h2>
+
+        <space>
+    </div>
+</div>
+
+Button:
+*********
+<button></button> tag, used to display buttons in web pages
+<button></button> tag is inline element
+ex:
+<button>
+  login
+</button>
+**********************************************************************
+in how many ways can we apply styles?
+***********************************************************************
+we can apply styles in three ways
+1)external
+2)internal
+3)inline
+<link> tag, used to apply external styles
+<style></style> tag, used to apply internal styles
+style attribute, used to apply inline styles
+**************************************************************************
+explain css specificity rule?
+**********************************************************************
+inline>id selector > class selector>element selector >universal selector
+inline styles have more specificity
+universal selector have least specificity
+"=",used to represent the universal selector
+images
+******
+<img> tag, used to display images
+<img> is non-paired tag
+<img> tag is inline element
+attributes
+***************
+1)width 
+   used to define the image width
+2)height
+   used to define the image height
+3)src  
+   used to refer image path/location
+4)alt
+   alt stands for alternative text
+   if image display fails ,automatically alternative text will display
+what are pseudo classes?
+   pseudo classes are used to set special state to an element
+   we will apply pseudo classes with the help of ":"
+   ex:
+         :hover
+         :first-of-type
+         :last-of-type
+         :nth-child
+         :not
+         -----
+         -----
+anchor element :
+*********************
+<a></a> tag, used to create hyper links
+<a></a> tag is inline element
+advantages:
+1)used to navigate from one webpage to another web page
+2)used to open external websites
+
+attributes
+**********
+1)src
+  used to refer target path
+2)target="_blank"
+  used to open new tab in browser
+font awesome:
+**************
+font awesome is the css library
+font awesome used to display symbols
+ex:
+rupee symbol , dollar symbol, cart symbol.............
+we will us font awesome with the help of "CDN"
+CDN stands for "content delivery network"
+we will include CDN in head section of webpage
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i></i> tag, used to display symbols
+ex:
+rupee symbol
+***********
+<i class="fa fa-rupee"></i>
+<i class="fa fa-dollar"></i>
+tables:
+*******
+collection of rows and columns called as tables
+tags:
+****
+<table></table> tag is used to display tables
+<tr></tr> tag is used to create table row
+<th></th> tag is used to display table heading
+<td></td> tag used to display table cell data
+Attributes:
+************
+1)border
+   used to draw border to the table
+ex:
+border="1"
+2)align
+  used to align the table
+ex:
+align="left"/"center"/"right"
+default alignment is "left"
+3)cell padding:
+  space around the cell content called as cell padding
+ex:
+cellpadding="10"
+4)cell spacing:
+  space between table cells are called as cell spacing
+ex:
+ cellspacing="10"
+5)colspan:
+ used to merge the cells horizontally(column wise)
+ex:
+colspan="2"
+6)rowspan:
+ used to merge the cells vertically(row wise)
+ex: rowspan="2"
+List:
+******
+html supports 3 types of lists
+1)unordered list
+2)ordered list
+3)definition list
+unordered list:
+***************
+  <ul></ul> is the tag , used to create unordered list
+  <li></li> is the tag, used to create list item
+  syntax: <ul>
+              <li></li>
+              <li></li>
+               --------
+           </ul>
+attributes:
+***********
+1)type="disc"/"circle"/"square"
+  default is disc
+ordered list:
+************
+<ol></ol> is the tag, used to create ordered list
+syntax:<ol>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ol>
+Attributes:
+**********
+1)type="A"/"a"/"I"/"i"/1
+ default is number
+2)start 
+   used to specify starting list number
+   start="10"
+3)reversed
+  used to reverse the list numbers
+nested list:
+************
+one list inside the another list called as nested list
+
+Definition List:
+******************
+ <dl></dl> dl stands for definition list
+ <dt></dt> dt stands for definition term(side heading)
+ <dd></dd> dd stands for definition description(theory under side heading)
+syntax:
+<dl>
+ <dt></dt>
+ <dd></dd>
+ <dd></dd>
+ -------
+--------
+
+
+ <dt></dt>
+ <dd></dd>
+ <dd></dd>
+-------
+---------
+
+
+ <dt></dt>
+ <dd></dd>
+ <dd></dd>
+------------
+----------
+
+
+</dl>
+form:
+****
+ collection of related data called as form
+ex:
+login form 
+registration form 
+enrollment form
+---
+----
+---
+ Tags:
+******
+1)<form action="" method="GET/POST/PUT/DELETE" name="" onsubmit="" onreset=""></form>
+    <Form></form> tag used to display the forms
+  action attribute used to connect to backend
+ method attribute used to specify the type of request
+GET method , used to read the data from backend
+POST method , used to send data to backend
+PUT method , used to update backend data
+DELETE method , used to delete backend data
+
+name attribute used to assign logical name to the form
+Ex:
+name="regForm"
+ where regForm is the logical name of the form
+
+ onsubmit  attribute used to handle the submit event
+Ex:
+  onsubmit ="register()"
+     whenever we click submit button , automatically register()  function will execute in javascript
+
+onreset attribute used to handle the reset event
+Ex:
+ onreset ="cancel()"
+  whenever we click reset button, automatically cancel() function will execute in javascript
+*******************************************************************************************************************
+<input name="" type="" placeholder="">
+  used to create the input boxes in forms
+   <input> tag is non paired tag
+   placeholder attribute used to display "helper text"(hint text)
+<input type="text">
+<input type="password">
+<input type="radio">
+<input type="checkbox">
+<input type="button">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="number">
+<input type="range">
+<input type="search">
+<input type="tel">
+<input type="submit">
+<input type="reset">
+<input type="url">
+<input type="date">
+<input type="color">
+****************
+ Radio buttons:
+**************
+radio buttons also called as "single selection controls"
+  (refer notes for image)
+***********
+checkboxes:
+**********
+ checkboxes are also called as "multi selection controls"(refer notes for img)
+************************
+ submit and reset button:
+************************
+<input type="submit" value="register"
+<input type="reset" value="cancel"(refer notes for img)
+**********
+ Dropdown:
+***********
+<select></select> tag is used to create dropdowns in forms
+<option></option> tag is used to populate the options to dropdown
+ **********
+Text area:
+***********
+<text area></text area> tag , used to enter the address
+(refer notes)
+ CSS POSITIONS:
+****************
+CSS supports below positions
+1)relative position
+2)Absolute position
+3)fixed position
+4)sticky position
+5)static position
+******************
+Relative position:
+******************
+   moving  element from starting position called as relative position
+   relative position may not affect "original layout" of  webpage
+********
+z-index:
+********
+   z-index released in css3
+   z-index used to change the order of elements in stack
+*****************
+Absolute position:
+******************
+ child element position depending on closest ancestor (parent) called as absolute position
+because of absolute position , original layout may effect
+ex:
+position :absolute;
+left:
+right:
+top:
+bottom:
+
+->what are the differences between relative and absolute position?
+**********************************************************************************************************************
+relative                                           absolute
+***********************************************************************************************************************
+1)moving element from starting called as        1)moving element with respect to closest ancestor 
+relative position                                  called as absolute position
+2)original layout may not effect                2)original layout will effect
+***********************************************************************************************************************
+fixed position
+*********
+ used to fix element permanently on webpage called as fixed position
+syntax:
+   position: fixed;
+   left:
+   right:
+   top:
+   bottom:
+*****************
+sticky position:
+******************
+ element will stick on webpage while scrolling
+ex: position: sticky
+    top:
+    bottom:
+Note: "static is the default position
+ Text formatting:
+*****************
+refer textformatting.html
+<marquee></marquee>
+**********************
+<marquee></marquee> tag,  is used to scroll the content
+attributes
+**********
+1)direction="right "/"left"/"up"/"down"
+  used to change the scrolling direction
+  default direction is "left"
+2)width 
+  used to define scrolling area
+  Ex: width="50%"
+3)scrollamount
+  used to control the scrolling speed
+******************
+<iframe></iframe>:
+******************
+<iframe> </iframe> tag ,used to :
+1)include google maps
+2)play youtube videos
+3)open pdf files
+4)open Wikipedia files
+5)include other webpages
+_________
+float:
+*****
+float is used to float the element either left of the container or right of the container
+syntax:
+float: left/right;
+______________
+border-box:
+**************
+ used to include the "border" and "padding" into the original width and height of the element
+syntax:
+ box-sizing : border-box;
+_________
+span tag:
+********
+<span></span> tag is used to select the portion of element
+it is an inline element
+it is also used to display validation msges
+_______________
+CSS dimensions:
+***************
+CSS supports below dimensions
+1)rem(root em)
+2)em
+3)%
+4)vw (viewport width) , vh (viewport height)
+5)px(pixel)
+
+1)rem:
+****
+ rem stands for root em
+1rem=16px
+all child elements dimension dependent on parent element dimension
+2)em
+**
+child element dimension depending on parent element dimension
+3)%percentage:
+************
+ measurement with respect to screen called as percentage
+ child element dimension depending on parent element dimension
+4)vw(viewport width)&vh(viewport height):
+********************************************
+measurement with respect to screen called as vw and vh
+ child element dimension wont dependent on parent element dimension
+5)px(pixel)
+***************
+ px is the default dimension
+each dot on screen  called as px
+ CSS GRID :
+************
+CSS grid is two dimensional
+CSS grid mainly on layout design
+by default CSS grid "Responsive"
+in CSS grid, we need parent-child relationship
+parent always called as "grid container"
+
+CSS grid properties:
+********************
+1)display : grid;
+   used to initialize the CSS Grid layout
+2) grid-template rows
+  used to define number of rows
+  ex: grid-template-rows:10% 80% 10%
+              (or)
+      grid-template-rows:1fr 2fr 1fr;
+      
+      fr-fraction
+3) grid-template-columns
+   used to definw number of columns
+   ex: grid-template-columns:15% 70% 15%
+                (or)
+       grid-template-columns:1fr 5fr 1fr;
+4)gap:
+  used to maintain gap between grid items
+5)grid-column
+  used to adjust element with respect to x-axis
+  Ex: grid-column:1/4;
+                 :1/-1;
+             -1 represents last edge
+6)grid-row
+  used to adjust element with respect to y-axis
+   Ex: grid-row:1/2;
+-->how to display element at center of webpage by using grid?
+Ex:
+      HTML                                                 CSS
+*******************************************************************************************
+<div class="parent">                                   .parent{
+    <img src="logo.jpg" alt="CareerIT">                  display : grid;
+</div>                                                   place-items : center;
+                                                         }
+
+CSS flex:
+**********
+CSS flex used to align items with respect to "main axis"
+CSS flex is one dimensional
+CSS flex mainly on "content " design
+By default CSS flex is responsive
+in CSS flex , we need parent and child relationship
+parent container always called as flex container
+Ex:
+ display : flex;
+
+-->what are the  differences between CSS flex and CSS Grid?
+ CSS flex                                                   CSS grid
+****************************************************************************************************
+1)one dimensional                                            1)two dimensional
+2)mainly on content                                          2)mainly on layout
+3)flex container                                             3)grid container
+4)display : flex;                                            4) display : grid ;
+
+Flex properties:
+******************
+1) display : flex ;
+   block level display automatically converts to inline display
+2) gap 
+ used to maintain gap between flex items
+ex: gap:20px;
+3)justify-content : flex-start/
+                    center/
+                    flex-end/
+                    space-between/
+                    space-around/
+                    space-evenly;       
+ used to move element with respect  to main axis
+ default value is flex-start
+4)align-items 
+  used to move flex items vertically
+  height property mandatory
+  Ex:
+    height:100vh;
+    align-items: flex-start/
+                center/
+                flex-end/
+                stretch;
+default value is "stretch"
+5)flex-direction: row/row-reverse/column/column-reverse;
+  used to change the direction of flex items
+ default value is row
+6)flex-wrap : nowrap/wrap/wrap-reverse
+ used to wrap flex items to new line
+ default value is "nowrap"
+7)order
+  used to change the direction of flex items
+  ex:
+    order:10;
+8)flex 
+  used to give equal space
+  flex:1;
+
+ --> how to display image at the center of webpage by using flex?
+     <div class="parent">
+            <img src="amazon.png" alt="amazon">
+        </div>
+      .parent{
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+            }

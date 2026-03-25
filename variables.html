@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> variables </title>
+    </head>
+    <body>
+        <script>
+            //addition
+           /*
+            var num1 = 200;
+            var num2 = 300;
+            var add = num1 + num2;
+            document.write(add, "<br>");
+            //subtraction
+            var num1 = 500;
+            var num2 = 300;
+            var sub = num1 - num2;
+            document.write(sub, "<br>");
+            */
+            /*
+            number
+            ******
+              -primitive data type
+              -we have five types of numbers (literals)
+                  1)decimal
+                  2)double
+                  3)hexadecimal
+                     hexadecimal starts with 0x(A-F)
+                  4)octal
+                     octal starts with 0o
+                  5)binary
+                     binary starts with 0b
+                Note: hexadecimal,octal,binary automatically converts to decimal
+            */
+            
+        /*
+            var hexadecimal = 0x123Abc;
+            document.write(hexadecimal,"<br>");
+
+            var octal = 0o123
+            document.write(octal,"<br>");
+            
+            var binary = 0b1010;
+            document.write(binary,"<br>");
+
+            var x = 156;
+            var y = 245;
+            var add = x+y;
+            document.write(add,"<br>");
+
+            var x=15;
+            var square=x;
+            document.write(square,"<br>");
+            */
+           /*
+           string
+           **********
+              collection of charcters /group of characters called as string
+              we will represent string in 3 ways
+                 1)" "(double quotes)
+                 2)' '(single quotes)
+                 3)``(backtick)
+            backtick technically called as "template literal"
+            template literal released in ES6 version
+            why template literal?
+                it is used to define multi line string
+            */
+           var sub = `JS !!!`
+           var msg = `welcome to ${sub}`
+           document.write(msg , `<br>`);
+           /*
+           boolean
+           ******
+           we have 2 boolean values
+              1)true 
+              2)false
+            true means  1
+            false means 0
+          ternary operator
+          ******************
+          condition ? block1 : block2;
+          if condition is true block 1 will execute otherwise block 2 will execute
+         */
+        /*var flag  = true
+        var flag1  = false 
+        flag ? document.write(`frontend`,`<br>`):document.write(`backend`,`<br>`);
+        !flag ? document.write(`frontend`,`<br>`):document.write(`backend`,`<br>`);
+        flag1 ? document.write(`frontend`,`<br>`):document.write(`backend`,`<br>`);
+        !flag1 ? document.write(`frontend`,`<br>`):document.write(`backend`,`<br>`);*/
+        /* 
+        undefined
+        ***********
+        variable is declared but valuse is not assigned called as undefined
+        undefined is primitive data type
+        undefined with any arithmatic operator gives result as NaN
+        NaN stands for Not an Number
+        */
+       /*
+       var x;
+       document.write(x,`<br>`);
+       document.write(x+10,`<br>`);
+       */
+      /* Null
+      *******
+      Null is the primitive data type
+      Null represents 0  or blank
+      external initialisation required
+      while performing arithmatic operation null auotmatically converts to 0
+      */
+    /*
+    var y = null;
+    document.write(y,`<br>`);
+    document.write(y+10,`<br>`);
+    */
+    /*
+    what are the differences between undefined and null?
+     undefined                               null
+     ***********************************************************
+     1)primitive data type                1)primitive data type
+     2)varibale not asigned               2)null reprents 0 or blank
+     3)external initialsiation not req    3)external initialisation required
+     4)undefined with any arithmatic       4)null with any arithmatic operations coverts to  0 
+     operations then result will be NaN
+        </script>
+    </body>
+</html>

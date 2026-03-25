@@ -1,0 +1,142 @@
+java script:
+*************
+java script is the scripting language
+java script used to develop dynamic web pages
+java script used to implement forms validations
+java script released by Netscape
+current version is ES13
+ES stands for ECMA script
+ECMA stands for "Europian computers manufacturing association"
+java script used to develop both client side applications and server side applications
+client side applications                           server side applications
+*****************************************************************************************
+Reactjs                                          nodejs
+vueJS
+Jquery
+angular
+< Script ></script> tag is used to include the javascript into "web pages"
+javascript supports two types of comments
+1.single line comment (//)
+2.multi line comment(/*   
+*/)
+javascript files extension must be ".js"
+ we will execute javascript in 2 ways 
+1)browser
+   interpreter
+2)Nodejs
+   node
+either interpreter or node will execute code line by line
+execution of code line by line called "synchronous execution"
+below command is used to execute java script with node :
+***********************************************************
+> node demo.js
+ java script is the object based scripting language
+browsers provided so many predefined objects ,  so we can call java script is the object based
+1)document :
+   used to manipulate the html elements(refer demo.html image from notes)
+
+whenever html loaded to browser successfully , automatically document/Dom obj/ document object model will create by browser
+Dom object internally contains  tree structure or heirarichal structure called as Dom tree structure 
+
+ navigation inside DOM object called  "DOM tree traversing"
+ 
+doing changes in DOM object called as DOM manipulation
+2) console
+  console object used to debug javascript application
+
+3)window 
+  window object is the super object or master object
+  window object i used to work with the browser properties
+ex:
+  window width
+  window height
+  number of tabs
+.....
+....
+...
+4)date
+  used to work with calender
+  Ex:
+    x=new Date();
+    document.write(x);
+    console.log(x);
+    above snippet code is used to get the current date(today)
+5)time
+  used to work with the timer
+6)localstorage
+   browser supports two types of storages
+   local storage
+   session storage
+  i) local storage object ,  used to work with the browser local storage
+  ii) session storage object ,  used to work with the browser session storage
+Java script is not secured scripting language , because we are able to see the source code by using below path
+  right click --> view page source
+--->what are the differences between == and ===?
+    ==                                                                    ===
+***********************************************************************************************************************
+1)compares left operand value with right operand value             1)compares left operand value with data type to right operand value with data type
+2)ignores data type                                               2)considers data type
+****************************************************************************************************************************
+ variables:
+**************
+   variables are used to store data
+     ex. string
+         number
+         boolean
+         arrays
+         objects
+                   --- -
+ we will declare variables in 3 ways 
+                   1.var
+                   2.let
+                   3.const
+                   4. <no keyword>
+
+let and const are  released in ES6 version
+syntax:
+        var/let/const variable_name = value;
+        ex: 
+           var x = "careerIT";
+           document.write(x); //careerIT
+
+rules of identifier
+ 1.identifier must have a-z,A-Z.0-9,$and_
+ 2.identifier should not start with digits
+                  ex.
+                    var 123abc; //wrong
+                    var abc123
+                    var_123
+                    var_123$abc
+                    var _123#abc; //wrong
+DATATYPE:
+***********
+datatype representing type of data
+we have two types of datatype
+     1.primitivedatatypes
+     2.non-primitivedatatypes
+
+ primitive data types:
+***********************
+     primitive data types representing plain data/ normal data
+     primitive datatype won't supports any predefined properties/predefined functions
+     primitive dataTypes are divided into
+                    1.string
+                    2.number
+                    3.boolean
+                    4.undefined
+                    5.null
+                    6.bigint
+                    7.symbol
+non primitive data types:
+*************************
+                  
+    non primitive datatypes are the objects
+    non primitive datatypes supports predefined properties and predefined functions
+                    ex.
+                    arrays
+                    objects
+                    functions
+                    classes
+                    interfaces
+
+               

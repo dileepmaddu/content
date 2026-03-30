@@ -65,9 +65,10 @@
             why template literal?
                 it is used to define multi line string
             */
-           var sub = `JS !!!`
+          /* var sub = `JS !!!`
            var msg = `welcome to ${sub}`
            document.write(msg , `<br>`);
+           */
            /*
            boolean
            ******
@@ -121,6 +122,111 @@
      3)external initialsiation not req    3)external initialisation required
      4)undefined with any arithmatic       4)null with any arithmatic operations coverts to  0 
      operations then result will be NaN
+     ********************************************************************************************
+     /*
+     BigInt:
+     *********
+        BigInt is used to store the large number
+        bigint suffix with "n"
+        range : 2^53-1 to -2^53-1
+    */
+    /*var large = 12345586975634264849735859567894647863572837480n;
+    document.write(large);
+    */
+    /*
+    symbol
+    *******
+    symbol is the primitive data type
+    symbol data type used to create unique identifiers
+    symbol data type used to achieve security
+    */
+    /*
+    r101=symbol("test");
+    r102=symbol("test");
+    */
+    /*
+    variable hoisting
+    ***********************
+        because of the var keyword variable declaration moved to the top scope of the application with undefined called as variable hoisting
+        var keyword initialises with "undefined "
+        var keyword supports "hoisting"
+    */
+    /*document.write(x,`<br>`);
+    document.write(x+100,`<br>`);
+    var x = 100;
+    document.write(x,`<br>`);
+    document.write(x+100,`<br>`);
+    */
+    /*Non primitive data types:
+    ******************************
+    non primitive data types are the object data
+    we can apply predefined properties and functions
+    Ex:
+       arrays
+       objects
+       functions
+       interfaces
+       classes...
+       ...
+       ...*/
+       /*var arr1 = [10,20,30,40,50];
+       document.write(arr1[0],`<br>`);
+       document.write(arr1[1],`<br>`);
+       document.write(arr1[2],`<br>`);
+       document.write(arr1[3],`<br>`);
+       document.write(arr1[4],`<br>`);
+       */
+       /*
+       JSON
+       *******
+       JSON stands for java script object notation
+       JSON also called as javascript objects
+       JSON ,used to transfer the data over the network
+       JSON is light weight
+       objects --> {}
+       arrays-->[]
+       data-->key & value pairs
+              key & value are seperated by using ":" 
+              key & value pairs are seperated by using ","
+        */
+       /*
+       let obj = {
+           key1 : 100,
+           key2 : 200,
+           key3 : 300
+       };
+       var x = obj.key1;
+       document.write(x,`<br>`);
+       var y = obj.key2;
+       document.write(y,`<br>`);
+       var z = obj.key3;
+       document.write(z,`<br>`);
+    */
+    /*var x= 100;
+    var x=200;
+    document.write(x);
+    let x =  100;
+    let x = 200;
+    document.write(x);
+    //var keyword allowes duplicates           //200
+    //let keyword doesnt allow duplicates      //Error
+    */
+    /*let x = 100;
+    {
+        let x =200;
+    }
+    document.write(x);
+    //var:200 is output while using var keyword inplace of let
+    //let:100 i output while using let keyword
+    */
+    /*
+    what are the differences between  var and let keyword?
+           var                                           let
+    ****************************************************************************
+    1)var introduced in ES1 version                1)let introduced in ES6 version
+    2)var allows duplicates                        2)let wont allows duplicates
+    3)variable hoisting supported by var keyword   3)let wonyt support variable hoisting 
+    4)global polluting raised by var keyword       4)global polluting issue not  raised by let keyword
         </script>
     </body>
 </html>

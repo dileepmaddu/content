@@ -227,6 +227,33 @@
     2)var allows duplicates                        2)let wont allows duplicates
     3)variable hoisting supported by var keyword   3)let wonyt support variable hoisting 
     4)global polluting raised by var keyword       4)global polluting issue not  raised by let keyword
-        </script>
+    */
+    /*
+    const
+           *****
+               const keyword introduced in ES6 version
+               reinitiliation / modification not possible with const keyword
+        */
+        //const x = 100;
+        //x = 200;
+
+        const arr = [10,20,30,40,50];
+        arr = [];
+        arr = [1000,2000,3000,4000,5000];
+        arr[0] = 1000;
+        arr[1] = 2000;
+        arr[4] = 5000;
+        console.log(arr);
+
+        const obj = {
+            key1 : 100
+        }
+        obj = {} //ERR
+        obj = {
+            key1 : 10000
+        }
+        obj.key1 = 10000
+        console.log(obj);
+           </script>
     </body>
 </html>

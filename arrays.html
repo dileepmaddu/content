@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arrays Manipulation</title>
+    </head>
+    <body>
+        <!--script>
+            /*
+            Arrays Manipulation
+            **********************
+                collection of indexed elements called as array
+                index starts from "0"
+                we will represent array with the help of "[]"
+                we will access array elements with the help of "indexes"
+                */
+        </script-->
+        <!--script>
+            let arr1 = [10,20,30,40,50];
+            let e1=arr1[0];
+            let e2=arr1[1];
+            let e3=arr1[2];
+            let e4=arr1[3];
+            let e5=arr1[4];
+            document.write(e1,`<br>`)
+            document.write(e2,`<br>`)
+            document.write(e3,`<br>`)
+            document.write(e4,`<br>`)
+            document.write(e5,`<br>`)
+
+        </script-->
+        <!--script>
+        /*
+        at():
+        ************
+        used to read elemnts from array with both +ve and -Ve indexes
+        */
+            let arr1 = [10,20,30,40,50];
+            let e1=arr1.at(0);
+            let e11=arr1.at(-5);
+            document.write(e1,e11);
+            let e2=arr1.at(1);
+            let e22=arr1.at(-4);
+            let e3=arr1.at(2);
+            let e33=arr1.at(-3);
+            let e4=arr1.at(3);
+            let e44=arr1.at(-2);
+            let e5=arr1.at(4);
+            let e55=arr1.at(-1);
+            document.write(e2,e22,e3,e33,e4,e44,e5,e55);
+
+        </script-->
+        <!--script>
+            /*
+            some()
+                if atleast one element satisfies the  condition it will true otherwie false
+            */
+            let arr1=[10,20,30,40,50];
+            let flag =  arr1.some((element,index)=>{
+                return element<=10;
+            })
+            document.write(flag);
+
+            let flag1 =  arr1.some((element,index)=>{
+                return element<10;
+            })
+            document.write(flag1);
+        </script-->
+        <!--script>
+             /*
+            Every()
+                if all elements satisfies the  condition it will true otherwie false
+            */
+            let arr1=[10,20,30,40,50];
+            let flag =  arr1.every((element,index)=>{
+                return element<=50;
+            })
+            document.write(flag);
+
+            let flag1 =  arr1.every((element,index)=>{
+                return element<50;
+            })
+            document.write(flag1);
+        </script-->
+        <!--script>
+            /*
+            map()
+            ******
+                map() used to manipulate every element in array
+                map() function released in ES6 version
+                map() function called as higher order function(hof)
+                map() function will return new array 
+                map() function is immutable function*/
+        </script-->
+        <!--script>
+            let arr1=[10,20,30,40,50];
+            let new_arr = arr1.map((element,index)=>{
+                return element*10;
+            });
+            console.table(new_arr);
+            console.log(arr1);
+
+        </script-->
+        <!--script>
+            /*
+            filter()
+            **********
+                filter() function used to apply conditions
+                filter() function released in ES6 version
+                filter() function called higher order function
+                filter() function will return new array
+                filter() function is immutable function*/
+        </script-->
+        <!--script>
+            let arr1=[1,2,3,4,5];
+            let new_arr= arr1.filter((element,index)=>{
+                return element>=3;;
+            });
+            console.log(new_arr);
+        </script-->
+        <!--script>
+            /*
+            reduce()
+            **********
+            reduce() function used to sum of array elements
+            reduce() function released in ES6 version
+            reduce() function called higher order function
+            reduce() function will return new array
+            reduce() function is immutable function
+            starting value in reduce function called as "Accumulator" in below example 150 acts as Accumulator
+            */
+           let arr1=[10,20,30,40,50];
+           let sum1= arr1.reduce((firstElement,nextElement)=>{
+               return firstElement + nextElement;
+            });
+            document.write(sum1);
+
+            let sum2= arr1.reduce((firstElement,nextElement)=>{
+               return firstElement + nextElement;
+            },150);
+            document.write(sum2);
+
+
+
+        </script-->
+        <!--script>
+            /*
+            reduceRight()
+            ****************
+                used to do concatenation from right to left
+            */
+           let arr1=['JS','TO','WELCOME'];
+           let res= arr1.reduceRight((firstElement,nextElement)=>{
+               return firstElement + " "+ nextElement;
+            });
+            document.write(res);
+
+        </script-->
+        <script>
+            /*
+            push:used to add element at the end of the array
+            unshift:add element at the beginning of the array
+            pop:deletes element from the end of existing array
+            shift:deletes element from the begin of the existing array
+            */
+            let arr1=[20,30,40];
+            console.log(arr1);
+            
+            arr1.push(50);
+            console.log(arr1);
+
+            arr1.unshift(10);
+            console.log(arr1);
+
+           arr1.pop(50);
+           console.log(arr1);
+
+           arr1.shift(10);
+           console.log(arr1);
+        </script>
+    </body>
+</html>

@@ -125,7 +125,7 @@
                 console.log(cursor.next());
             }
         </script-->
-        <script>
+        <!--script>
             function *test_func(){
                 yield 10000;
                 yield 20000;
@@ -138,6 +138,53 @@
             console.log(cursor.next());
             console.log(cursor.next());
 
+        </script-->
+        <!--script>
+            /*higher order functions(HOF):
+            **************************
+                in HOF we will 
+                    1)pass one function definition to another function parameter
+                    2)one function return another function
+                usecase:
+                    1)To implement clean and readable code
+                    2)To achieve code reusabaility
+
+            */
+        </script-->
+        <!--script>
+            let outer = (num1)=>{
+                return (num2) =>{
+                    return num1*num2;
+                }
+            }
+            let inner = outer(200);
+            let res = inner(100);
+            document.write(res);
+        </script-->
+        <!--script>
+            let test_func = (param1)=>{
+                param1();
+            }
+            test_func( ()=>{
+                document.write("welcome to HOF !!!");
+            });
+        </script-->
+        <!--script>
+            /*
+            pure functions
+            *******************
+                output of functions never affected by external factors called as pure functions*/
+        </script-->
+        <script>
+            /*IMPURE FUNCTION EXAMPLE*/
+            let res=0;
+
+            let add= (num1,num2)=>{
+                res = res+num1+num2;
+                return  res;
+            }
+            document.write(add(2,3),`<br>`);
+            document.write(add(2,3));
         </script>
         
 

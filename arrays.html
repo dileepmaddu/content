@@ -155,7 +155,7 @@
             document.write(res);
 
         </script-->
-        <script>
+        <!--script>
             /*
             push:used to add element at the end of the array
             unshift:add element at the beginning of the array
@@ -176,6 +176,117 @@
 
            arr1.shift(10);
            console.log(arr1);
-        </script>
+        </script-->
+        <!--script>
+            /*splice()
+                used to add/remove elements from any index
+                mutable
+            */
+        let arr1=[10,20,30,40,50,60,70,80,90,100];
+        arr1.splice(4,3);
+        console.log(arr1);
+
+        arr1.splice(4,2);
+        console.log(arr1);
+
+        arr1.splice(0,1);
+        console.log(arr1);
+
+        arr1.splice(0,1,10,20);
+        console.log(arr1);
+
+        arr1.splice(4,0,50,60,70,80,90,100);
+        console.log(arr1);
+
+        </script-->
+        <!--script>
+            /*
+            slice
+                used to choose elements from array
+                immutable
+            */
+        let arr1=[10,20,30,40,50,60,70,80,90,100];
+        console.log(arr1.slice(4,7));
+        console.log(arr1.slice(0,1));
+        console.log(arr1.slice(9));
+        console.log(arr1.slice(5).concat(arr1.slice(0,5)));
+        </script-->
+        <!--script>
+            /*
+            findindex()
+                used to find the index of an element in array
+                if element found it will return index value
+                if element not found return -1
+            */
+        </script-->
+        <!--script>
+            let arr1=[10,20,30,40,50,60,70,80,90,100];
+            let i1 = arr1.findIndex((element,index)=>{
+                return element == 50;
+        });
+        console.log(i1);
+        let i2 = arr1.findIndex((element,index)=>{
+            return element == 100;
+        });
+        console.log(i2);
+        let i3 = arr1.findIndex((element,index)=>{
+                return element == 1000;
+        });
+        console.log(i3);
+
+        arr1.splice(arr1.findIndex((element,index)=>{
+            return element == 60;
+        }),1);
+        console.log(arr1);
+
+        </script-->
+        <!--script>
+            /*
+            Includes
+                used to perform search operation
+                boolean function
+            */
+        let arr1 = [10,20,30,40,50,60,70,80,90,100];
+        console.log(arr1.includes(50));
+        console.log(arr1.includes(500));
+        </script-->
+        <!--script>
+            /*
+            find()
+                used to perform search operation
+                this is number function
+                if element found it will return number otherwise undefined
+            */
+        let arr1 = [10,20,30,40,50,60,70,80,90,100];
+        console.log(
+            arr1.find((element,index)=>{
+                return element == 50;
+            })
+        );
+        console.log(
+            arr1.find((element,index)=>{
+                return element == 500;
+            })
+        );
+        </script-->
+        <!--script>
+            /*
+               trim()-used to remove white spaces from beginning and ending of a string
+               trimStart()-used to remove white spacing from beginning of string
+               trimEnd()-used to remove white spaces at ending of string
+            */
+        let str= " hello ";
+        console.log(str.trim().length);
+        console.log(str.trimStart().length);
+        console.log(str.trimEnd().length);
+
+        </script-->
+        <!--script>
+            /*  padStart() - add required charcters at the beginning of string
+                padEnd() - add required characters at the ending of string
+            */
+           let str = "hello";
+           console.log( str.padStart(10,"*").padEnd(15,"*"));
+        </script-->
     </body>
 </html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JSON </title>
+    </head>
+    <body>
+        <!-- <script>
+            /*
+                JSON
+                ******
+                java script object notation
+                         (or)
+                java script objects
+                JSON used to transfer the data over the network
+                JSON is light weight
+                JSON is network friendly format
+                syntax
+                    objects-{}
+                    arrays-[]
+                    data- key & value pairs
+                        -key & value are seperated by ":"
+                        -values are seperated by ","
+
+            */
+           let obj1 = {
+            frontend : "React",
+            backend : "Nodejs",
+            Database: "MongoDB"
+           };
+           //sol1 :by using (.)dot 
+           let e1 = obj1.frontend;
+           let e2 = obj1.backend;
+           let e3 = obj1.Database;
+           document.write(e1,"<br>");
+           document.write(e2,"<br>");
+           document.write(e3,"<br>");
+           //sol2 : by using square brackets
+           let e11 = obj1["frontend"];
+           let e22 = obj1["backend"];
+           let e33 = obj1["Database"];
+           document.write(e11,"<br>");
+           document.write(e22,"<br>");
+           document.write(e33,"<br>");
+           //sol3: by using destructured
+           let {frontend,backend,Database} = obj1;
+           document.write(frontend,backend,Database);
+           //sol4: for....in loop
+           for(let key in obj1){
+            document.write(obj1[key]);
+           }
+        </script> -->
+        <!-- <script>
+            let obj1 = {
+            frontend : "React",
+            backend : "Nodejs",
+            Database: "MongoDB"
+           };
+           let arr1 = Object.keys(obj1);
+           console.log(arr1);
+           let arr2 = Object.values(obj1);
+           console.log(arr2);
+        </script> -->
+        <!-- <script>
+            let obj1 = {
+            frontend : "React",
+            backend : "Nodejs",
+            Database: "MongoDB"
+           };
+           let str = JSON.stringify(obj1);
+           console.log(typeof(str));         //string
+
+           let obj2  = JSON.parse(str);
+           console.log(typeof(obj2));       //object
+
+
+        </script> -->
+        <!-- <script>
+            let obj1 = {
+            frontend : "React",
+            backend : "Nodejs",
+            Database: "MongoDB"
+           };
+           delete obj1.Database;
+           delete obj1.backend;
+           console.log(obj1);
+        </script> -->
+        <!-- <script>
+            //if keys are duplicates old value overidded with new value
+            let obj1={
+                key1 : 100,
+                key1 : 200
+
+            };
+            console.log(obj1);
+        </script> -->
+        <!-- <script>
+            //if values are duplicate no problem in output
+            let obj1={
+                key1 : 100,
+                key2 : 200
+
+            };
+            console.log(obj1);
+        </script> -->
+        <script>
+            let emps =[{empID:"101",empname:"emp1",empdept:"CSE",empimage:"https://picsum.photos/100?random=1"},
+                       {empID:"102",empname:"emp2",empdept:"ECE",empimage:"https://picsum.photos/100?random=2"},
+                       {empID:"103",empname:"emp3",empdept:"IT",empimage:"https://picsum.photos/100?random=3"},
+                       {empID:"104",empname:"emp4",empdept:"EEE",empimage:"https://picsum.photos/100?random=4"},
+                       {empID:"105",empname:"emp5",empdept:"CIVIL",empimage:"https://picsum.photos/100?random=5"}]
+            document.write(`
+            <table border="1" align=center cellpadding="10" cellspacing="10">
+                <tr>
+                    <th>EmpID</th>
+                    <th>EmpNAME</th>
+                    <th>EmpDEPT</th>
+                    <th>EmpIMAGE</th>
+                </tr>
+            `);
+            emps.forEach((element,index)=>{
+                document.write(`<tr>
+                    <td>${element.empID}</td>
+                    <td>${element.empname}</td>
+                    <td>${element.empdept}</td>
+                     <td>
+                        <img src=${element.empimage} width="80">   
+                    </td>
+                </tr>`);
+            });
+            document.write(`</table>`);
+        </script>
+    </body>
+</html>
